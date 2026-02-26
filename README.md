@@ -1,5 +1,7 @@
 # ERPNext Docker Deployment
 
+**English** | [Português](README.pt-br.md)
+
 ERPNext v16 deployment with Docker Compose, Traefik, and additional apps (Helpdesk, CRM, Frappe Assistant).
 
 ## Quick Start
