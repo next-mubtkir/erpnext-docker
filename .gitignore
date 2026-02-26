@@ -1,0 +1,11 @@
+.env
+.env.local
+.env.prd
+
+.idea/
+*.log
+.DS_Store
+
+traefik/certs/
+*.pem
+*.key

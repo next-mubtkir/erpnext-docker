@@ -1,0 +1,16 @@
+services:
+  frontend:
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.erpnext.rule=Host(`${SITE_NAME}`)"
+      - "traefik.http.routers.erpnext.entrypoints=websecure"
+      - "traefik.http.routers.erpnext.tls=true"
+      - "traefik.http.routers.erpnext.tls.certresolver=lets-encrypt"
+      - "traefik.http.services.erpnext.loadbalancer.server.port=8080"
+    networks:
+      - web
+      - erpnext-internal
+
+networks:
+  web:
+    external: true
