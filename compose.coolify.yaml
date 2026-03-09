@@ -60,6 +60,8 @@ services:
     depends_on:
       - backend
       - websocket
+    expose:
+      - "8080"
     volumes:
       - sites:/home/frappe/frappe-bench/sites
 
